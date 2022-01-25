@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        article{
+            width: 900px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        p{
+        margin-top: 0px;
+            
+        
+        }
+        .cols-2{
+            columns: 2;
+            
+
+        }
+        .mtb30{
+            margin-top: 30px;
+            margin-bottom: 30px;
+        }
+        .img-large{
+            width: 900px;
+        }
+        figure{
+            margin: 0;
+        }
+        .img-small{
+            width: 435px;
+             
+        }
+        .mr-40{
+            margin-right: 20px;
+        }
+        .tr{
+            text-align: right;
+        }
+        .tj{
+            text-align: justify;
+        }
+        .bt{
+            border-top: 1px solid #333;
+            padding-top: 10px;
+
+        }
+        .bb{
+            border-bottom: 1px solid #333;
+            padding-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <article>
+        <!-- HW*:Why same text size:h1,h1?
+        H1 și H2 vizual au aceeași dimensiune,deși după sens,H1 indică un text de-o mai mare importanță și,by default,
+         au proprietăți de stiluri diferite,deoarece fiind elemente de tip copil,părintele lor--tagul article are,by
+        default,niste proprietăți de stiluri prestabilite de browser:(
+        font-size: 1.5em;
+        margin-block-start: 0.83em;
+        margin-block-end: 0.83em;).Atfel  elementele copii: h1 și h2 moștenesc propritățile elementului părinte- 
+        article. -->
+        <h1>Lorem ipsum dolor sit amet consectetur adipisicing.</h1>
+        <h2 class="bb">Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, dolore quibusdam?</h2>
+        <!-- HTML: add the  NEW correct semantic element-FIGURE-tag pereche care permite de-a grupa
+        orice elemente,ca de exemplu,în cazul de față,mai multe imagini și o descriere tangentă lor. -->
+        <figure class="tr">
+        <img  class="img-large"src="https://i.picsum.photos/id/440/800/400.jpg?hmac=CVLAavkf6-Czn7ljD9DhBxMzEhAJSnnMXKBZBmzSZJM" alt="">
+        <img class="img-small mr-40"  src="https://i.picsum.photos/id/240/380/380.jpg?hmac=ft-gxXJLjdX8JCSjXmPsbd75WLWAegdRwDnm7nPM2sM" alt="">
+        <img class="img-small"  src="https://i.picsum.photos/id/326/380/380.jpg?hmac=Vfi7GkVmCXvdiJ6BPljV8arAI8Aj9V3vX_RmuBAxpMI" alt="">
+        <br>
+        <small>photos taken ...&copy:Author X.Y.</small>
+        </figure>
+        <div class="cols-2 mtb30 tj">
+        <p><strong>Lorem</strong> ipsum dolor sit amet consectetur adipisicing elit. Soluta fugit saepe atque, ad cum provident porro cumque molestias debitis ullam neque reiciendis consequuntur doloribus assumenda eius error labore quia eveniet. Ipsum saepe possimus beatae voluptatem rerum praesentium totam debitis id, iure maiores magnam tenetur eius omnis quo reprehenderit quam quibusdam?</p>
+        <p><strong>Cupiditate</strong> quas facere temporibus consectetur veritatis dolorem error deleniti earum, fugit nulla eveniet totam sunt, dolor ipsa iste officiis inventore dignissimos perferendis voluptatum quam excepturi consequatur, amet molestias sequi. Quaerat, quasi ut et rerum optio eaque ea quisquam nihil quos? Consequuntur ab illum quasi culpa non earum suscipit doloribus sunt.</p>
+        <p><strong>Mollitia</strong> maiores, est iusto quibusdam excepturi ut ad dignissimos consectetur corporis nobis eum fugit, natus ratione enim error beatae omnis ducimus itaque saepe. Aliquam et, nisi alias magni soluta eos incidunt! Recusandae aliquid dolore tempore magni alias suscipit eum voluptas, facere omnis repellendus vitae. Distinctio autem illo eveniet esse similique.</p>
+        </div>
+    <div class="tr bt"> vote <a href="">▲</a><a href="">▼</a></div>
+    </article>
+    
+</body>
+</html>
